@@ -16,8 +16,6 @@ void shell()
 	while(1) {
 		uart_puts("Shell -> ");
 		uart_gets(command, SIZE);
-		uart_puts(command);	
-		uart_send('\n');
 		if (!strcmp(command, "help")) {
 			help();	
 		} else if(!strcmp(command, "hello")) {
